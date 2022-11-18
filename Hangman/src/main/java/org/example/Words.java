@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Words {
@@ -13,10 +14,23 @@ public class Words {
     //38 cities
     public static final Random randomise = new Random();
 
+
+    ArrayList<Character> secretWord = new ArrayList<>();
+
+    ArrayList<Character> guesses = new ArrayList<>();
+
+    //if input letter equals to an index in secret word, it reveals itself
+
+
+
     public static String getRandomWord(){
+
         String randomWord = wordPool[randomise.nextInt(wordPool.length)];
 
         System.out.println(randomWord);
+        System.out.println(randomWord.length());
+
+
         return randomWord;
     }
 
