@@ -15,6 +15,7 @@ public class Words {
 
     public static String getRandomWord(){
         String randomWord = wordPool[randomise.nextInt(wordPool.length)];
+
         System.out.println(randomWord);
         return randomWord;
     }
